@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAP Wallet | Kaki Mao Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f8f7f3;
+      color: #1f2933;
+      line-height: 1.7;
+    }
+
+    header, main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .back-link {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      color: #1f2933;
+    }
+
+    .eyebrow {
+      margin-top: 72px;
+      color: #6b7cff;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(44px, 8vw, 88px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      margin: 20px 0 24px;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 21px;
+      color: #6b7280;
+    }
+
+    section {
+      padding: 56px 0;
+      border-top: 1px solid #e5e2da;
+    }
+
+    h2 {
+      font-size: 28px;
+      letter-spacing: -0.03em;
+      margin: 0 0 20px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: #4b5563;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .meta-card {
+      background: #ffffff;
+      border: 1px solid #e5e2da;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .meta-card span {
+      display: block;
+      color: #6b7280;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .meta-card strong {
+      font-size: 15px;
+    }
+
+    .placeholder {
+      background: #ffffff;
+      border: 1px dashed #c9c5ba;
+      border-radius: 28px;
+      min-height: 320px;
+      display: grid;
+      place-items: center;
+      color: #9ca3af;
+      margin: 32px 0;
+    }
+
+    @media (max-width: 760px) {
+      .meta-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="back-link" href="index.html">← Back to Home</a>
+
+    <div class="eyebrow">Enterprise / Event System / SAP</div>
+    <h1>SAP Wallet</h1>
+    <p class="intro">
+      An event check-in and agenda system designed for an internal conference,
+      connecting online interaction with offline event operations.
+    </p>
+
+    <div class="meta-grid">
+      <div class="meta-card">
+        <span>Role</span>
+        <strong>UX/UI Designer</strong>
+      </div>
+      <div class="meta-card">
+        <span>Team</span>
+        <strong>4 members</strong>
+      </div>
+      <div class="meta-card">
+        <span>Timeline</span>
+        <strong>5 weeks</strong>
+      </div>
+      <div class="meta-card">
+        <span>Focus</span>
+        <strong>Workflow UX</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        SAP Wallet was designed for an internal event with around 3,000 attendees.
+        The product supported agenda browsing, session check-in, and participation records.
+      </p>
+      <p>
+        My work focused on clarifying the event-day user flow, improving information architecture,
+        and creating a practical interface that could support both attendees and operational needs.
+      </p>
+    </section>
+
+    <section>
+      <h2>Problem</h2>
+      <p>
+        At the beginning, the project focused mainly on the check-in function.
+        However, after reviewing the actual event-day scenario, I realized that users would not start
+        from “checking in” itself. They would first need to know where to go, which session to attend,
+        and what action was required at each moment.
+      </p>
+    </section>
+
+    <section>
+      <h2>Design Direction</h2>
+      <p>
+        I reframed the homepage around the agenda, placing check-in actions closer to the session detail flow.
+        This made the system more aligned with the real offline event journey.
+      </p>
+
+      <div class="placeholder">
+        Project image / flow diagram placeholder
+      </div>
+    </section>
+
+    <section>
+      <h2>Outcome</h2>
+      <p>
+        The system supported more than 20,000 check-ins and over 2,600 logged-in users during the event.
+        Through this project, I learned how important it is to design not only for isolated functions,
+        but also for real-world operational flows.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
