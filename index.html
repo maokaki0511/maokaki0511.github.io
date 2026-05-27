@@ -3,11 +3,457 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kaki Mao Portfolio</title>
+  <title>Kaki Mao | UI/UX Designer</title>
+  <style>
+    :root {
+      --bg: #f8f7f3;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --line: #e5e2da;
+      --accent: #6b7cff;
+      --accent-soft: #eceeff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+      background: rgba(248, 247, 243, 0.82);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 88px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: grid;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      line-height: 0.96;
+      letter-spacing: -0.07em;
+      margin: 0;
+      max-width: 920px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin-top: 32px;
+      font-size: 20px;
+      color: var(--muted);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 36px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 650;
+      border: 1px solid var(--line);
+      background: var(--card);
+    }
+
+    .button.primary {
+      background: var(--text);
+      color: white;
+      border-color: var(--text);
+    }
+
+    .section-title {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 48px;
+      margin-bottom: 36px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 16px;
+      color: var(--muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .section-title p {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      font-weight: 750;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .pill {
+      background: var(--accent-soft);
+      color: #3f4ed8;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      min-height: 280px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(31, 41, 51, 0.08);
+    }
+
+    .card .meta {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.16;
+      letter-spacing: -0.03em;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .tag {
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      background: #fafafa;
+    }
+
+    .about-text {
+      max-width: 780px;
+      font-size: 22px;
+      color: var(--muted);
+    }
+
+    footer {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      color: var(--muted);
+    }
+
+    footer a {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .nav-links {
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+
+      .section-title {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Kaki Mao</h1>
-  <p>UI/UX Designer based in Tokyo.</p>
-  <p>This is my personal portfolio website.</p>
+  <header>
+    <nav>
+      <a href="#" class="logo">Kaki Mao</a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#little-works">Little Works</a>
+        <a href="#about">About</a>
+        <a href="mailto:maokaki0511@gmail.com">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">UI/UX Designer based in Tokyo</div>
+        <h1>Systems thinker,<br>workflow designer,<br>B2B SaaS learner.</h1>
+        <p>
+          I design structured, user-centered digital products for complex workflows,
+          with a focus on B2B SaaS, information architecture, and design systems.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">View selected work</a>
+          <a class="button" href="#about">About me</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Profile</h2>
+        <p>
+          I care about turning ambiguous problems into clear product structures,
+          practical user flows, and scalable interface systems.
+        </p>
+      </div>
+
+      <div class="pill-row">
+        <span class="pill">B2B SaaS</span>
+        <span class="pill">Workflow UX</span>
+        <span class="pill">Design Systems</span>
+        <span class="pill">UX Research</span>
+        <span class="pill">Interaction Design</span>
+        <span class="pill">Motion Design</span>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="section-title">
+        <h2>Featured Work</h2>
+        <p>Selected projects across enterprise tools, workflow systems, and product experience design.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="meta">UX Research / Mobile / Social Impact</div>
+          <h3>GraceGo</h3>
+          <p>
+            A UX research and product design project exploring elderly mobility,
+            digital assistance, and community-based support.
+          </p>
+          <div class="tags">
+            <span class="tag">Research</span>
+            <span class="tag">Service Design</span>
+            <span class="tag">Mini Program</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="meta">Enterprise / Event System / SAP</div>
+          <h3>SAP Wallet</h3>
+          <p>
+            Designed an event check-in and agenda system that connected online interaction
+            with offline conference operations.
+          </p>
+          <div class="tags">
+            <span class="tag">Information Architecture</span>
+            <span class="tag">Event Flow</span>
+            <span class="tag">UI Design</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="meta">Creator Tool / Data Dashboard / AI Product</div>
+          <h3>Creator Center</h3>
+          <p>
+            Reframed a creator data module from an internal operations dashboard
+            into a growth-oriented product experience.
+          </p>
+          <div class="tags">
+            <span class="tag">Dashboard</span>
+            <span class="tag">Growth UX</span>
+            <span class="tag">Design System</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="meta">B2B Platform / Table UX / Genetics</div>
+          <h3>JunoCloud</h3>
+          <p>
+            Redesigned a complex TAT management page to improve search efficiency,
+            information hierarchy, and operational clarity.
+          </p>
+          <div class="tags">
+            <span class="tag">B2B UX</span>
+            <span class="tag">Table Design</span>
+            <span class="tag">Data Visualization</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="little-works">
+      <div class="section-title">
+        <h2>Little Works</h2>
+        <p>Small but practical design explorations in motion, visual systems, and interface details.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="meta">Motion Design</div>
+          <h3>Lottie Animation Library</h3>
+          <p>
+            Created reusable Lottie animation templates to support flexible product communication
+            and reduce development cost.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="meta">Visual / Brand</div>
+          <h3>Logo & Visual Experiments</h3>
+          <p>
+            Selected visual works including logo design, layout studies, and small brand explorations.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Designer with a background in UI/UX, enterprise products, and cross-functional collaboration.</p>
+      </div>
+
+      <p class="about-text">
+        I am a UI/UX designer currently based in Tokyo. Previously, I worked as a UX intern at SAP,
+        where I contributed to enterprise tools, design systems, motion design, and internal workflow products.
+        My current focus is to grow as a product-oriented designer who can understand business contexts,
+        clarify user problems, and create reliable digital experiences for complex systems.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>Made by Kaki Mao © 2026</div>
+    <div>
+      <a href="mailto:maokaki0511@gmail.com">Email</a>
+      ·
+      <a href="#">LinkedIn</a>
+      ·
+      <a href="#">Behance</a>
+      ·
+      <a href="#">Resume</a>
+    </div>
+  </footer>
 </body>
 </html>
