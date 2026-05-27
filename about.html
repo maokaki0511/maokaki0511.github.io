@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Kaki Mao Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #f8f7f3;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --subtle: #9ca3af;
+      --card: #ffffff;
+      --line: #e5e2da;
+      --accent: #6b7cff;
+      --accent-dark: #4856d8;
+      --accent-soft: #eceeff;
+      --yellow-soft: #fff6d8;
+      --green-soft: #e8f7ef;
+      --pink-soft: #fff0f4;
+      --shadow: rgba(31, 41, 51, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(248, 247, 243, 0.86);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .top-nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 750;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 88px 0;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 90px;
+    }
+
+    .hero {
+      min-height: 76vh;
+      display: grid;
+      align-items: center;
+      padding: 96px 0 72px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 56px;
+    }
+
+    .back-link:hover {
+      color: var(--text);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 760;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(52px, 8vw, 104px);
+      line-height: 0.94;
+      letter-spacing: -0.07em;
+      margin: 0;
+      max-width: 980px;
+    }
+
+    .hero-intro {
+      max-width: 760px;
+      margin-top: 32px;
+      font-size: 21px;
+      color: var(--muted);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 56px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 780;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .section-heading p {
+      margin: 0;
+      max-width: 820px;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.12;
+      letter-spacing: -0.045em;
+      font-weight: 780;
+    }
+
+    .large-text {
+      max-width: 880px;
+      font-size: 22px;
+      color: var(--muted);
+    }
+
+    .large-text p {
+      margin: 0 0 22px;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .story-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 32px;
+      min-height: 280px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .story-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 48px var(--shadow);
+    }
+
+    .story-card .label {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 780;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .story-card h3 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.16;
+      letter-spacing: -0.035em;
+    }
+
+    .story-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .value-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .value-item {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 18px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+    }
+
+    .value-icon {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      font-weight: 850;
+    }
+
+    .value-item h3 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      letter-spacing: -0.035em;
+    }
+
+    .value-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .outside-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .outside-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 26px;
+      min-height: 190px;
+    }
+
+    .outside-card h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+    }
+
+    .outside-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .quote-section {
+      border-bottom: none;
+      padding-bottom: 96px;
+    }
+
+    .quote-card {
+      background: var(--text);
+      color: #ffffff;
+      border-radius: 36px;
+      padding: 48px;
+    }
+
+    .quote-card .label {
+      color: #cfd3ff;
+      font-size: 13px;
+      font-weight: 780;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .quote-card p {
+      margin: 0;
+      max-width: 920px;
+      font-size: clamp(30px, 5vw, 56px);
+      line-height: 1.1;
+      letter-spacing: -0.055em;
+      font-weight: 800;
+    }
+
+    .quote-card .small {
+      margin-top: 28px;
+      color: #d1d5db;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.7;
+    }
+
+    footer {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 44px 24px 72px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    footer a {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 880px) {
+      .section-heading {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .story-grid,
+      .outside-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      main {
+        padding: 0 18px;
+      }
+
+      .top-nav {
+        padding: 16px 18px;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 12px;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 72px 0 56px;
+      }
+
+      .back-link {
+        margin-bottom: 42px;
+      }
+
+      .story-grid,
+      .outside-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .story-card,
+      .value-item,
+      .outside-card,
+      .quote-card {
+        border-radius: 24px;
+        padding: 24px;
+      }
+
+      .value-item {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+        padding: 36px 18px 56px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="top-nav">
+      <a class="brand" href="index.html">Kaki Mao</a>
+      <div class="nav-links">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#little-works">Little Works</a>
+        <a href="index.html#about">About</a>
+        <a href="mailto:maokaki0511@gmail.com">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <a class="back-link" href="index.html">← Back to Home</a>
+
+        <div class="eyebrow">About Me</div>
+
+        <h1>Designing through structure, curiosity, and continuous creation.</h1>
+
+        <p class="hero-intro">
+          I’m Kaki Mao, a UI/UX designer based in Tokyo. I design structured digital experiences
+          for B2B SaaS, workflow systems, and real-world operations.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>Who I Am</h2>
+        <p>
+          I care about how people understand information, make decisions, and move through complex tasks.
+        </p>
+      </div>
+
+      <div class="large-text">
+        <p>
+          I’m especially interested in design problems that involve unclear information structures,
+          complex workflows, and real-world operational contexts.
+        </p>
+        <p>
+          To me, design is not only about making interfaces look polished. It is about understanding
+          where people get stuck, how tasks should be organized, and how a product can make a difficult
+          process feel clearer and more reliable.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>What Brought Me Here</h2>
+        <p>
+          My path into design has been shaped by curiosity, practice, and the need to keep moving forward.
+        </p>
+      </div>
+
+      <div class="story-grid">
+        <article class="story-card">
+          <div class="label">01 / Choosing Design</div>
+          <h3>Why I chose design</h3>
+          <p>
+            I didn’t choose design only because I liked beautiful visuals. What attracted me more was
+            the process of understanding problems: why something feels confusing, where people hesitate,
+            and how structure can make things easier to use.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <div class="label">02 / Learning by Doing</div>
+          <h3>Internship and growth at SAP</h3>
+          <p>
+            During my internship at SAP, I worked on enterprise tools, internal workflow products,
+            design system-related tasks, video design, and motion design. These projects taught me
+            that design is rarely about a single screen.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <div class="label">03 / New Environment</div>
+          <h3>Moving to Japan</h3>
+          <p>
+            After graduation, I moved to Japan and started working as a UI designer in Tokyo.
+            Working in a new country has been challenging, but it has also made me more aware of how
+            language, culture, and context shape communication and product experience.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <div class="label">04 / Current Direction</div>
+          <h3>Growing toward product design</h3>
+          <p>
+            I’m now focusing on becoming a more product-oriented designer who can understand business
+            context, clarify user problems, and create reliable experiences for complex systems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>What I Bring</h2>
+        <p>
+          My design approach comes from both structured thinking and hands-on execution.
+        </p>
+      </div>
+
+      <div class="value-list">
+        <article class="value-item">
+          <div class="value-icon">01</div>
+          <div>
+            <h3>System thinking</h3>
+            <p>
+              I enjoy breaking down complex workflows and rebuilding them into clearer structures,
+              user flows, and interface systems.
+            </p>
+          </div>
+        </article>
+
+        <article class="value-item">
+          <div class="value-icon">02</div>
+          <div>
+            <h3>Practical empathy</h3>
+            <p>
+              I try to understand not only what users say, but also when, where, and under what pressure
+              they use a product.
+            </p>
+          </div>
+        </article>
+
+        <article class="value-item">
+          <div class="value-icon">03</div>
+          <div>
+            <h3>Visual and motion foundation</h3>
+            <p>
+              My background in UI, motion design, and visual communication helps me create interfaces
+              that are both clear and polished.
+            </p>
+          </div>
+        </article>
+
+        <article class="value-item">
+          <div class="value-icon">04</div>
+          <div>
+            <h3>Learning ability</h3>
+            <p>
+              I’m used to learning new tools, domains, and workflows through real projects,
+              self-directed practice, and continuous output.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>Outside of Work</h2>
+        <p>
+          I keep creating in different forms, even when they are small.
+        </p>
+      </div>
+
+      <div class="outside-grid">
+        <article class="outside-card">
+          <h3>Video Editing</h3>
+          <p>
+            I enjoy editing videos and thinking about rhythm, pacing, and emotional structure.
+          </p>
+        </article>
+
+        <article class="outside-card">
+          <h3>Swimming</h3>
+          <p>
+            Swimming helps me reset my body and mind, especially during periods of uncertainty.
+          </p>
+        </article>
+
+        <article class="outside-card">
+          <h3>Motion Illustration</h3>
+          <p>
+            I like exploring small animated illustrations and visual details outside formal product work.
+          </p>
+        </article>
+
+        <article class="outside-card">
+          <h3>Notes & Experiments</h3>
+          <p>
+            I want to keep documenting what I learn, from portfolio building to AI-assisted workflows.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-card">
+        <div class="label">A note to myself</div>
+        <p>
+          So I choose to keep creating.
+        </p>
+        <p class="small">
+          I like the idea that when we stop creating, talent loses its meaning and only taste remains.
+          Taste alone can make us narrow, judging others instead of making things.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Made by Kaki Mao © 2026</div>
+    <div>
+      <a href="mailto:maokaki0511@gmail.com">Email</a>
+      ·
+      <a href="#">LinkedIn</a>
+      ·
+      <a href="#">Behance</a>
+      ·
+      <a href="#">Resume</a>
+    </div>
+  </footer>
+</body>
+</html>
