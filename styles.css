@@ -85,6 +85,7 @@ a {
 }
 
 .hero {
+  width: min(1004px, calc(100% - var(--page-pad) * 2));
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
   gap: clamp(48px, 9vw, 190px);
