@@ -59,14 +59,10 @@ a {
 }
 
 .brand-mark {
-  display: grid;
   width: 20px;
   height: 20px;
-  place-items: center;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  font-size: 11px;
-  line-height: 1;
+  display: block;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -250,16 +246,11 @@ a {
   margin: 0 0 22px;
 }
 
-.mood-row span {
+.mood-row img {
   width: 31px;
   height: 31px;
-  border: 3px solid var(--blue);
-  border-radius: 50%;
-  background: #f4f8ff;
-}
-
-.mood-row span:nth-child(4) {
-  background: var(--blue);
+  display: block;
+  object-fit: contain;
 }
 
 .about-copy h2 {
