@@ -123,7 +123,7 @@ a {
   margin: 0 0 56px;
   color: var(--blue);
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .project-row {
@@ -180,7 +180,7 @@ a {
 .tags li::before {
   content: "#";
   margin-right: 2px;
-  color: var(--blue);
+  color: #73a5ff;
 }
 
 .project-summary {
@@ -210,14 +210,15 @@ a {
   gap: 8px;
   color: var(--blue);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
-.text-link span {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 0;
+.text-link img {
+  width: 8px;
+  height: 12px;
+  display: block;
+  object-fit: contain;
 }
 
 .about {
