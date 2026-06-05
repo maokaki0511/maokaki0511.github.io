@@ -307,7 +307,8 @@ a {
 
 .site-footer nav {
   gap: 32px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 @media (max-width: 820px) {
