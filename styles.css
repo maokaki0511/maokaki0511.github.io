@@ -207,7 +207,7 @@ a {
 .text-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   color: var(--blue);
   font-size: 13px;
   font-weight: 400;
@@ -215,8 +215,8 @@ a {
 }
 
 .text-link img {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   display: block;
   object-fit: contain;
 }
