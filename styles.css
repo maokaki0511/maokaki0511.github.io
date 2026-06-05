@@ -6,7 +6,7 @@
   --soft: #f7f7f8;
   --placeholder: #d9d9d9;
   --page-pad: clamp(22px, 6vw, 116px);
-  --content-width: 980px;
+  --content-width: 1208px;
 }
 
 * {
