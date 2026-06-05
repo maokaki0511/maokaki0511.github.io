@@ -52,17 +52,13 @@ a {
 }
 
 .brand {
-  gap: 6px;
-  color: var(--blue);
-  font-size: 16px;
-  font-weight: 800;
+  width: 128px;
 }
 
-.brand-mark {
-  width: 28px;
-  height: 28px;
+.brand-lockup {
+  width: 100%;
+  height: auto;
   display: block;
-  object-fit: contain;
 }
 
 .site-nav {
