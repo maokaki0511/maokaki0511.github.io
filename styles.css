@@ -1,5 +1,5 @@
 :root {
-  --blue: #1e63ff;
+  --blue: #186ab5;
   --text: #323232;
   --muted: #5a5a5a;
   --hairline: #eeeeef;
@@ -84,7 +84,7 @@ a {
 }
 
 .text-link:hover {
-  color: #2963f7;
+  color: var(--blue);
 }
 
 .section-shell {
@@ -199,7 +199,7 @@ a {
 .tags li::before {
   content: "#";
   margin-right: 2px;
-  color: #73a5ff;
+  color: #75b0e0;
 }
 
 .project-summary {
