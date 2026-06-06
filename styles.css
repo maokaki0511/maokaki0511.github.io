@@ -570,6 +570,53 @@ a {
   color: var(--blue);
 }
 
+html[lang="ja"] .hero h1 {
+  font-size: 54px;
+}
+
+html[lang="ja"] .hero p,
+html[lang="ja"] .about-copy p {
+  font-size: 16px;
+}
+
+html[lang="ja"] .project-summary {
+  font-size: 18px;
+}
+
+html[lang="ja"] .project-content h4 {
+  font-size: 12px;
+}
+
+html[lang="ja"] .project-content p:not(.project-summary),
+html[lang="ja"] .case-overview-copy p,
+html[lang="ja"] .case-facts dt,
+html[lang="ja"] .case-facts dd,
+html[lang="ja"] .case-pager-link {
+  font-size: 12px;
+}
+
+html[lang="ja"] .about-copy h2 {
+  font-size: clamp(36px, 5vw, 54px);
+}
+
+html[lang="ja"] .case-hero p {
+  font-size: 38px;
+}
+
+html[lang="ja"] .case-overview-copy h2,
+html[lang="ja"] .case-overview-copy h3,
+html[lang="ja"] .case-sidebar a {
+  font-size: 16px;
+}
+
+html[lang="ja"] .case-section h2 {
+  font-size: 22px;
+}
+
+html[lang="ja"] .case-section p {
+  font-size: 16px;
+}
+
 .case-pager-arrow {
   width: 18px;
   height: 18px;
