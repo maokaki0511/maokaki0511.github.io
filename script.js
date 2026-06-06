@@ -66,12 +66,22 @@ const translations = {
     "SAP DCOM Shanghai 2023に向けて、アジェンダ閲覧、QRチェックイン、バッジ収集、抽選資格の確認を一体化したデジタルウォレット体験を設計しました。",
   "Empowering creators to manage content, track performance, and grow through a unified analytics platform":
     "クリエイターがコンテンツ管理、成果確認、改善行動を一つの分析プラットフォーム上で進められるよう支援する。",
+  "Designing a web workspace for AI character creators to build, manage, preview, and improve their creations.":
+    "AIキャラクターの制作、管理、プレビュー、改善を支えるWebワークスペースを設計する。",
   "Designed a responsive creator dashboard from 0 to 1, integrating performance analytics, content management, fan insights, and creation workflows into one scalable platform experience.":
     "パフォーマンス分析、コンテンツ管理、ファンインサイト、制作フローを統合したレスポンシブなクリエイターダッシュボードを0から設計しました。",
   "Bridging older adults and local helpers through a more accessible daily mobility support experience":
     "高齢者と身近な支援者をつなぎ、日常の移動をより安心して行える支援体験を設計する。",
+  "Researching and designing mobility support for older adults in a digitally transformed urban environment.":
+    "DXが進む都市環境における高齢者の移動支援をリサーチし、設計する。",
   "Conducted qualitative and quantitative research to understand older adults' mobility challenges, and designed a WeChat mini program that connects seniors with nearby helpers for safer, more confident everyday travel.":
     "高齢者の移動課題を理解するために定性・定量調査を行い、近くの支援者とつながることで安心して外出できる体験を提案しました。",
+  "Designing a rescue service system for pets left unattended during COVID-19 lockdowns.":
+    "COVID-19による隔離期間中、家に取り残されたペットを救助するためのサービスシステムを設計する。",
+  "Designed a public service system that connects pet owners, volunteers, communities, and rescue organizations to make emergency pet rescue safer, more transparent, and easier to coordinate.":
+    "ペットの飼い主、ボランティア、地域コミュニティ、保護団体をつなぎ、緊急時のペット救助をより安全で透明性が高く、調整しやすいものにする公共サービスシステムを設計しました。",
+  "Designing a pet rescue service system for owners and volunteers during COVID-19 isolation.":
+    "COVID-19による隔離期間中の飼い主とボランティアを支えるペット救助サービスシステムを設計する。",
   "I'm an AI-native UX designer. I adopt system thinking to create enjoyable solutions that scale.":
     "AIネイティブなUXデザイナーとして、システム思考を用いて、楽しくスケールするソリューションを設計しています。",
   Back: "戻る",
@@ -88,12 +98,19 @@ const translations = {
   Timeline: "制作期間",
   Tools: "ツール",
   "Corporate Project": "企業プロジェクト（実案件）",
+  "Course Project": "授業プロジェクト",
   "Graduate Research Project": "研究プロジェクト（大学院課題）",
   "UX/UI Design": "UX/UIデザイン",
   "UI Design": "UIデザイン",
   "UX Research": "UXリサーチ",
+  "UX Research / Service Design / UI Design":
+    "UXリサーチ / サービスデザイン / UIデザイン",
+  "Group project, team leader": "グループプロジェクト、リーダー",
+  "Research, Interview, Wireframe, Prototype":
+    "リサーチ、インタビュー、ワイヤーフレーム、プロトタイプ",
   "4 members": "4名",
   "6 members": "6名",
+  Highlights: "ハイライト",
   Challenge: "課題",
   "Final Solution": "最終提案",
   Outcome: "成果",
@@ -199,6 +216,38 @@ const translations = {
     "提案UIは、外出前・移動中・外出後の場面を軸に支援を整理しました。高齢者が経路選択を理解しやすくし、支援者がいつ・どのように関わるべきか把握できることを目指しました。",
   "This project trained me to see accessibility as a relationship between people, context, and timing. It also helped me structure research insights into service concepts that support autonomy rather than replacing it.":
     "このプロジェクトでは、アクセシビリティを人・文脈・タイミングの関係として捉える視点を学びました。また、自立を置き換えるのではなく支えるサービスコンセプトへ調査知見を構造化する経験になりました。",
+  "Pet's Voice is a service design project created during the COVID-19 lockdown. It focuses on pet owners who were temporarily isolated or unable to return home, and on volunteers who tried to rescue and care for pets left alone.":
+    "Pet's Voiceは、COVID-19によるロックダウン期に制作したサービスデザインプロジェクトです。一時的な隔離や帰宅困難によりペットを世話できなくなった飼い主と、取り残されたペットを救助・ケアしようとするボランティアに着目しました。",
+  "How might we help pet owners and volunteers coordinate emergency pet rescue while protecting privacy, safety, trust, and rescue efficiency?":
+    "プライバシー、安全性、信頼、救助効率を守りながら、飼い主とボランティアが緊急時のペット救助を円滑に進めるにはどうすればよいか。",
+  "During the lockdown, many pets were left at home without food or water. Pet owners could not return home and could only wait anxiously for updates. At the same time, volunteers faced unclear task information, privacy concerns, route limitations, property access issues, and risks during rescue actions.":
+    "ロックダウン中、多くのペットが水や食料のない状態で家に取り残されました。飼い主は帰宅できず、救助状況の連絡を不安なまま待つしかありませんでした。一方でボランティアは、不明確なタスク情報、プライバシーへの懸念、移動制限、住宅への立ち入り、救助時の安全リスクに直面していました。",
+  "A public service system that matches pet owners with nearby volunteers and professional rescue organizations.":
+    "飼い主、近隣ボランティア、専門保護団体をマッチングする公共サービスシステム。",
+  "Pet owners can submit rescue requests, provide pet and home information, authorize entry, track progress, and complete payment. Volunteers can view task details, receive rescue guidance, communicate safely through the platform, report special situations, and get insurance support.":
+    "飼い主は救助依頼を提出し、ペットや住居情報の入力、入室許可、進捗確認、支払いを行えます。ボランティアはタスク詳細を確認し、救助ガイドを受け取り、プラットフォーム上で安全に連絡し、特殊状況を報告し、保険によるサポートを受けられます。",
+  "The project won the National Third Prize in the 2020 UXDA User Experience Design Competition.":
+    "本プロジェクトは、2020 UXDAユーザー体験デザインコンテストで全国三等賞を受賞しました。",
+  'It was also selected for the International Youth Art Festival "Design out Isolation," the DESIS Lab / COVID-19 online exhibition, and Collaborative City @ Lille 2020, World Design Capital.':
+    "また、「湖畔国際青年芸術祭 - Design out Isolation」、DESIS Lab / COVID-19オンライン展、Collaborative City @ Lille 2020 World Design Capitalにも選出されました。",
+  "Understanding the rescue journey from both pet owners' and volunteers' perspectives.":
+    "飼い主とボランティア双方の視点から救助ジャーニーを理解する。",
+  "We interviewed pet owners, individual volunteers, and animal rescue association volunteers. Pet owners worried about whether their pets were still alive, whether volunteers were trustworthy, whether property would be damaged, and whether rescue costs would become unclear.":
+    "ペットの飼い主、個人ボランティア、動物保護団体のボランティアにインタビューを行いました。飼い主は、ペットが無事か、ボランティアを信頼できるか、家財が損傷しないか、救助費用が不透明にならないかを不安に感じていました。",
+  "Turning an informal mutual-aid process into a structured, trustworthy, and protected rescue system.":
+    "非公式な相互扶助を、構造化された信頼性と保護のある救助システムへ転換する。",
+  "By matching users by location, clarifying rescue tasks, protecting private information, offering action guides, and connecting professional partners such as shelters, pet hospitals, locksmiths, insurance companies, and disposal services, the platform could reduce uncertainty for both sides.":
+    "位置情報によるマッチング、救助タスクの明確化、個人情報の保護、行動ガイドの提供、保護施設・動物病院・鍵業者・保険会社・無害化処理サービスなど専門パートナーとの連携により、双方の不確実性を下げることを目指しました。",
+  "Mapping stakeholders, user journeys, service flows, and backstage support systems.":
+    "ステークホルダー、ユーザージャーニー、サービスフロー、バックエンドの支援体制を整理する。",
+  "The service was divided into different task types. Simple tasks within the same community could be handled by local volunteers, while complex, risky, or cross-community tasks would be transferred to professional association volunteers.":
+    "サービスではタスクを種類ごとに分類しました。同じコミュニティ内の簡単なタスクは地域ボランティアが担当し、複雑・高リスク・広範囲のタスクは専門保護団体のボランティアへ引き継ぐ設計にしました。",
+  "Designing an app platform for mutual aid, publishing rescue requests, safe messaging, and task tracking.":
+    "相互扶助、救助依頼の投稿、安全なメッセージ、タスク進捗確認のためのアプリプラットフォームを設計する。",
+  "The app includes five main areas: Mutual Aid, Discover, Publish, Messages, and Profile. Pet owners can publish rescue requests and track progress, while volunteers can accept tasks, review pet information, follow rescue guidance, and report special cases.":
+    "アプリは「互助」「発見」「投稿」「メッセージ」「マイページ」の5つの主要領域で構成されています。飼い主は救助依頼を投稿し進捗を確認でき、ボランティアはタスクの受注、ペット情報の確認、救助ガイドの参照、特殊状況の報告を行えます。",
+  "This project helped me understand service design as a coordination system between people, resources, risks, and trust. Instead of designing only an app interface, I learned to design the relationships behind the interface.":
+    "このプロジェクトを通じて、サービスデザインを人、資源、リスク、信頼を調整するシステムとして捉えることを学びました。単にアプリ画面を設計するのではなく、その背後にある関係性を設計する経験になりました。",
 };
 
 const translatableSelectors = [
