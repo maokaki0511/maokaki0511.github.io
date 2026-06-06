@@ -583,7 +583,7 @@ html[lang="ja"] .about-copy p {
   font-size: 16px;
 }
 
-html[lang="ja"] .project-summary {
+html[lang="ja"] .project-content .project-summary {
   font-size: 18px;
   font-weight: 600;
 }
