@@ -172,6 +172,12 @@ a {
   background: var(--placeholder);
 }
 
+.project-content {
+  height: 301px;
+  display: flex;
+  flex-direction: column;
+}
+
 .project-content h3 {
   margin: 0 0 12px;
   font-size: 26px;
@@ -197,7 +203,7 @@ a {
 }
 
 .project-summary {
-  margin: 0 0 54px;
+  margin: 0 0 auto;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.25;
@@ -348,6 +354,10 @@ a {
 
   .project-media {
     min-height: 210px;
+  }
+
+  .project-content {
+    height: auto;
   }
 
   .project-summary {
