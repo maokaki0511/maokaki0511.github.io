@@ -17,3 +17,37 @@ if (wave) {
     );
   });
 }
+
+const caseSections = document.querySelectorAll(".case-section[id]");
+const caseLinks = document.querySelectorAll(".case-sidebar a[href^='#']");
+
+if (caseSections.length && caseLinks.length) {
+  const linksById = new Map(
+    [...caseLinks].map((link) => [link.getAttribute("href").slice(1), link])
+  );
+
+  const setActiveLink = (id) => {
+    caseLinks.forEach((link) => {
+      link.classList.toggle("active", link === linksById.get(id));
+    });
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+      if (visible[0]) {
+        setActiveLink(visible[0].target.id);
+      }
+    },
+    {
+      rootMargin: "-30% 0px -55% 0px",
+      threshold: [0.1, 0.25, 0.5, 0.75],
+    }
+  );
+
+  caseSections.forEach((section) => observer.observe(section));
+  setActiveLink(caseSections[0].id);
+}

@@ -15,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
     "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   background: #ffffff;
   letter-spacing: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a {
@@ -460,11 +460,8 @@ a {
 }
 
 .case-sidebar {
-  position: fixed;
+  position: sticky;
   top: 120px;
-  left: max(var(--page-pad), calc((100vw - var(--content-width)) / 2));
-  width: 180px;
-  z-index: 5;
   display: grid;
   gap: 16px;
   padding-top: 4px;
