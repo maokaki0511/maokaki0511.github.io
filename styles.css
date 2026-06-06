@@ -576,6 +576,7 @@ html[lang="ja"] .hero h1 {
 
 html[lang="ja"] .hero p {
   font-size: 18px;
+  font-weight: 600;
 }
 
 html[lang="ja"] .about-copy p {
@@ -600,6 +601,7 @@ html[lang="ja"] .about-copy h2 {
 
 html[lang="ja"] .case-hero p {
   font-size: 32px;
+  font-weight: 700;
 }
 
 html[lang="ja"] .case-overview-copy h2,
