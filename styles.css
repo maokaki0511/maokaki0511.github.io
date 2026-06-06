@@ -1,7 +1,7 @@
 :root {
   --blue: #1e63ff;
-  --text: #242428;
-  --muted: #5e6168;
+  --text: #323232;
+  --muted: #5a5a5a;
   --hairline: #eeeeef;
   --soft: #f7f7f8;
   --placeholder: #d9d9d9;
@@ -58,7 +58,7 @@ a {
 }
 
 .brand {
-  width: 128px;
+  width: 112px;
 }
 
 .brand-lockup {
@@ -101,7 +101,7 @@ a {
 .hero h1 {
   max-width: 610px;
   margin: 0 0 28px;
-  font-size: clamp(44px, 6vw, 61px);
+  font-size: 56px;
   font-weight: 900;
   line-height: 0.99;
 }
@@ -109,7 +109,7 @@ a {
 .hero p {
   max-width: 720px;
   margin: 0 0 8px;
-  color: #2d2f34;
+  color: var(--text);
   font-size: 18px;
   line-height: 1.45;
 }
@@ -168,8 +168,8 @@ a {
 
 .project-content h3 {
   margin: 0 0 12px;
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -179,7 +179,7 @@ a {
   gap: 12px;
   margin: 0 0 18px;
   padding: 0;
-  color: #6a6f7b;
+  color: var(--muted);
   font-size: 16px;
   list-style: none;
 }
@@ -206,15 +206,15 @@ a {
 
 .project-content p:not(.project-summary) {
   margin: 0 0 18px;
-  color: #383b42;
-  font-size: 13px;
+  color: var(--text);
+  font-size: 14px;
   line-height: 1.55;
 }
 
 .text-link {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
   color: var(--blue);
   font-size: 13px;
   font-weight: 400;
