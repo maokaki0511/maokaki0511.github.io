@@ -79,9 +79,12 @@ a {
 }
 
 .site-nav a:hover,
-.site-footer a:hover,
-.text-link:hover {
+.site-footer a:hover {
   color: var(--blue);
+}
+
+.text-link:hover {
+  color: #2963f7;
 }
 
 .section-shell {
@@ -206,7 +209,7 @@ a {
 
 .project-content p:not(.project-summary) {
   margin: 0 0 18px;
-  color: var(--text);
+  color: var(--muted);
   font-size: 14px;
   line-height: 1.55;
 }
@@ -215,17 +218,19 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  color: var(--blue);
+  color: var(--text);
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.text-link img {
+.text-link-arrow {
   width: 18px;
   height: 18px;
   display: block;
-  object-fit: contain;
+  background-color: currentColor;
+  mask: url("assets/arrow-right.svg") center / contain no-repeat;
+  -webkit-mask: url("assets/arrow-right.svg") center / contain no-repeat;
 }
 
 .about {
