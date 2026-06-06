@@ -583,16 +583,12 @@ html[lang="ja"] .project-summary {
   font-size: 18px;
 }
 
-html[lang="ja"] .project-content h4 {
-  font-size: 12px;
-}
-
 html[lang="ja"] .project-content p:not(.project-summary),
 html[lang="ja"] .case-overview-copy p,
 html[lang="ja"] .case-facts dt,
 html[lang="ja"] .case-facts dd,
 html[lang="ja"] .case-pager-link {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 html[lang="ja"] .about-copy h2 {
