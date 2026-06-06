@@ -576,10 +576,6 @@ a {
   color: var(--blue);
 }
 
-html[lang="ja"] .hero h1 {
-  font-size: 54px;
-}
-
 html[lang="ja"] .hero p {
   font-size: 18px;
   font-weight: 400;
@@ -741,8 +737,16 @@ html[lang="ja"] .case-section p {
     font-size: 42px;
   }
 
+  html[lang="ja"] .hero h1 {
+    font-size: 42px;
+  }
+
   .hero p,
   .tags {
+    font-size: 14px;
+  }
+
+  html[lang="ja"] .hero p {
     font-size: 14px;
   }
 
