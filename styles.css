@@ -93,8 +93,10 @@ a {
   font: inherit;
   background: transparent;
   cursor: pointer;
+  transition: color 160ms ease;
 }
 
+.language-switch button:hover,
 .language-switch button.active {
   color: var(--blue);
   font-weight: 700;
