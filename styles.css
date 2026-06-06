@@ -75,6 +75,28 @@ a {
   font-weight: 400;
 }
 
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.language-switch button {
+  padding: 0;
+  border: 0;
+  color: var(--text);
+  font: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.language-switch button.active {
+  color: var(--blue);
+  font-weight: 700;
+}
+
 .site-nav a,
 .site-footer a {
   transition: color 160ms ease;
