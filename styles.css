@@ -141,7 +141,7 @@ a {
   grid-template-columns: minmax(0, 1.3fr) minmax(290px, 0.9fr);
   gap: 56px;
   align-items: center;
-  margin-bottom: 72px;
+  margin-bottom: 40px;
 }
 
 .work-section .project-row:last-child {
@@ -150,14 +150,13 @@ a {
 
 .project-media {
   width: 100%;
-  min-height: 278px;
+  aspect-ratio: 510 / 250;
   overflow: hidden;
   border-radius: 12px;
 }
 
 .project-media-image {
   display: grid;
-  min-height: 250px;
   place-items: center;
   background: #fbfbff;
 }
