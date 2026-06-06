@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   background: #ffffff;
   letter-spacing: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -393,26 +395,28 @@ a {
 }
 
 .case-overview-copy {
-  padding: 78px 72px 78px 0;
+  width: min(100%, 480px);
+  margin: 0 auto;
+  padding: 78px 0;
 }
 
 .case-overview-copy h2,
 .case-overview-copy h3 {
-  margin: 0 0 14px;
+  margin: 0 0 20px;
   color: var(--blue);
   font-size: 18px;
   font-weight: 700;
 }
 
 .case-overview-copy p {
-  margin: 0 0 18px;
+  margin: 0;
   color: var(--text);
   font-size: 14px;
   line-height: 1.55;
 }
 
 .case-overview-copy h3 {
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 .case-facts {
@@ -456,8 +460,11 @@ a {
 }
 
 .case-sidebar {
-  position: sticky;
-  top: 96px;
+  position: fixed;
+  top: 120px;
+  left: max(var(--page-pad), calc((100vw - var(--content-width)) / 2));
+  width: 180px;
+  z-index: 5;
   display: grid;
   gap: 16px;
   padding-top: 4px;
