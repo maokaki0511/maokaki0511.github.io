@@ -598,10 +598,6 @@ html[lang="ja"] .case-pager-link {
   font-size: 14px;
 }
 
-html[lang="ja"] .about-copy h2 {
-  font-size: clamp(36px, 5vw, 54px);
-}
-
 html[lang="ja"] .case-hero p {
   font-size: 32px;
   font-weight: 600;
