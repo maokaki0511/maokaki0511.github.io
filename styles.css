@@ -576,7 +576,7 @@ html[lang="ja"] .hero h1 {
 
 html[lang="ja"] .hero p {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 html[lang="ja"] .about-copy p {
@@ -585,6 +585,7 @@ html[lang="ja"] .about-copy p {
 
 html[lang="ja"] .project-summary {
   font-size: 18px;
+  font-weight: 600;
 }
 
 html[lang="ja"] .project-content p:not(.project-summary),
