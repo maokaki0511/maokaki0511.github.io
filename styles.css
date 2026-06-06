@@ -332,15 +332,27 @@ a {
 
 .back-link {
   display: inline-flex;
+  align-items: center;
+  gap: 2px;
   margin-bottom: 32px;
-  color: var(--muted);
-  font-size: 12px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 400;
   text-transform: uppercase;
   transition: color 160ms ease;
 }
 
 .back-link:hover {
   color: var(--blue);
+}
+
+.back-link-arrow {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor;
+  flex: 0 0 auto;
+  transform: scaleX(-1);
 }
 
 .case-hero {
@@ -369,15 +381,19 @@ a {
 }
 
 .case-overview {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-inline: max(var(--page-pad), calc((100vw - var(--content-width)) / 2));
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.6fr);
-  gap: 56px;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
   align-items: stretch;
   margin-bottom: 88px;
+  background: linear-gradient(90deg, #f4fbff 0 50%, #d8d8d8 50% 100%);
 }
 
 .case-overview-copy {
-  padding: 42px 0;
+  padding: 78px 72px 78px 0;
 }
 
 .case-overview-copy h2,
@@ -393,7 +409,7 @@ a {
 .case-section p {
   margin: 0 0 18px;
   color: var(--text);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.55;
 }
 
@@ -428,14 +444,17 @@ a {
 
 .case-cover {
   min-height: 430px;
+  margin: 58px 0 58px 72px;
+  background: #9a9a9a;
+  border-radius: 0;
 }
 
 .case-body {
+  width: 100%;
   display: grid;
-  grid-template-columns: 150px minmax(0, 760px);
+  grid-template-columns: 180px minmax(0, 1fr);
   gap: 90px;
   align-items: start;
-  justify-content: center;
 }
 
 .case-sidebar {
@@ -448,11 +467,15 @@ a {
 
 .case-sidebar a {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 18px;
   transition: color 160ms ease;
 }
 
 .case-sidebar a:hover {
+  color: var(--blue);
+}
+
+.case-sidebar a.active {
   color: var(--blue);
 }
 
@@ -467,7 +490,7 @@ a {
 
 .case-section h2 {
   color: var(--text);
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .case-section .section-lead {
@@ -564,6 +587,15 @@ a {
     gap: 32px;
   }
 
+  .case-overview {
+    background: #f4fbff;
+    padding-block: 0;
+  }
+
+  .case-overview-copy {
+    padding: 48px 0;
+  }
+
   .case-sidebar {
     position: static;
     display: flex;
@@ -572,7 +604,7 @@ a {
   }
 
   .case-cover {
-    min-height: 260px;
+    display: none;
   }
 
   .process-steps {
