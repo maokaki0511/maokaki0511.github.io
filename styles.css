@@ -228,9 +228,8 @@ a {
   width: 18px;
   height: 18px;
   display: block;
-  background-color: currentColor;
-  mask: url("assets/arrow-right.svg") center / contain no-repeat;
-  -webkit-mask: url("assets/arrow-right.svg") center / contain no-repeat;
+  fill: currentColor;
+  flex: 0 0 auto;
 }
 
 .about {
