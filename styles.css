@@ -198,10 +198,10 @@ a {
 }
 
 .project-content h4 {
-  margin: 0 0 12px;
+  margin: 0 0 6px;
   color: var(--blue);
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .project-content p:not(.project-summary) {
@@ -274,7 +274,7 @@ a {
 .about-copy p {
   margin: 0 0 18px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.35;
 }
 
@@ -296,7 +296,7 @@ a {
 
 .site-footer strong {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   font-weight: 800;
 }
 
