@@ -61,6 +61,11 @@ a {
 
 .brand {
   width: 112px;
+  transition: opacity 160ms ease;
+}
+
+.brand:hover {
+  opacity: 0.6;
 }
 
 .brand-lockup {
