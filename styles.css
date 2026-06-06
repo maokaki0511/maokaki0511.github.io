@@ -397,19 +397,17 @@ a {
 }
 
 .case-overview-copy h2,
-.case-overview-copy h3,
-.case-section h2 {
+.case-overview-copy h3 {
   margin: 0 0 14px;
   color: var(--blue);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 
-.case-overview-copy p,
-.case-section p {
+.case-overview-copy p {
   margin: 0 0 18px;
   color: var(--text);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -431,14 +429,14 @@ a {
 
 .case-facts dt {
   color: var(--blue);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
 .case-facts dd {
   margin: 0;
   color: var(--text);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
 }
 
@@ -525,6 +523,40 @@ a {
   margin-top: 28px;
 }
 
+.case-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+
+.case-pager-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color 160ms ease;
+}
+
+.case-pager-link:hover {
+  color: var(--blue);
+}
+
+.case-pager-arrow {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
+.case-pager-prev .case-pager-arrow {
+  transform: scaleX(-1);
+}
+
 @media (max-width: 820px) {
   .site-header,
   .site-header-inner {
@@ -597,10 +629,7 @@ a {
   }
 
   .case-sidebar {
-    position: static;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 18px;
+    display: none;
   }
 
   .case-cover {
