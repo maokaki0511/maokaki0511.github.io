@@ -102,6 +102,7 @@ const translations = {
   Home: "Home",
   "Creator Center": "Creator Center",
   GraceGo: "GraceGo",
+  "About Me": "About Me",
   Overview: "概要",
   "Project Info": "プロジェクト情報",
   Category: "種別",
@@ -130,6 +131,13 @@ const translations = {
   Opportunity: "機会",
   Ideate: "アイデア展開",
   Takeaways: "学び",
+  Education: "学歴",
+  "Work Experience": "職務経験",
+  Internship: "インターンシップ",
+  Strengths: "強み",
+  Skill: "スキル",
+  "Outside of Work": "仕事以外のこと",
+  "About Creation": "制作について",
   "During my long-term internship at SAP, I designed a web-based check-in experience for SAP d-com Shanghai, a large-scale corporate event with around 3,000 participants.":
     "SAPでの長期インターンシップ期間中、約3,000名規模の企業向けイベント「SAP d-com Shanghai」における会場チェックイン用Web体験の設計を担当しました。",
   "How might we turn event participation into a clear, verifiable, and motivating check-in experience?":
@@ -260,6 +268,34 @@ const translations = {
     "アプリは「互助」「発見」「投稿」「メッセージ」「マイページ」の5つの主要領域で構成されています。飼い主は救助依頼を投稿し進捗を確認でき、ボランティアはタスクの受注、ペット情報の確認、救助ガイドの参照、特殊状況の報告を行えます。",
   "This project helped me understand service design as a coordination system between people, resources, risks, and trust. Instead of designing only an app interface, I learned to design the relationships behind the interface.":
     "このプロジェクトを通じて、サービスデザインを人、資源、リスク、信頼を調整するシステムとして捉えることを学びました。単にアプリ画面を設計するのではなく、その背後にある関係性を設計する経験になりました。",
+  "This page is a flexible space for my background, design values, working style, and selected stories beyond individual projects. Text and images can be replaced section by section later.":
+    "このページは、個別プロジェクト以外の背景、デザイン観、働き方、個人的なストーリーを整理するためのスペースです。テキストや画像は後からセクションごとに差し替えられます。",
+  "A design background shaped by industrial design, interaction design, and research-driven product thinking.":
+    "工業デザイン、インタラクションデザイン、リサーチに基づくプロダクト思考から形成されたデザインバックグラウンド。",
+  "Placeholder copy for education. This section can include school experience, research direction, design training, and how your academic background informs your UX practice.":
+    "学歴に関する仮文です。学校での経験、研究テーマ、デザイン教育、UX実践につながる学びを後から追加できます。",
+  "Practical experience across B2B SaaS, AI products, and digital service systems.":
+    "B2B SaaS、AIプロダクト、デジタルサービスシステムに関わる実践経験。",
+  "Placeholder copy for work experience. Later, this section can summarize roles, responsibilities, project types, collaboration style, and measurable contributions.":
+    "職務経験に関する仮文です。担当役割、業務範囲、プロジェクトタイプ、協働スタイル、成果などを後から整理できます。",
+  "Placeholder copy for internship. This section can be used for SAP, AI product, and other professional experiences, with images or screenshots added later.":
+    "インターンシップに関する仮文です。SAP、AIプロダクト、その他の実務経験について、後から画像やスクリーンショットと一緒に追加できます。",
+  "Structured thinking, fast prototyping, and practical design execution.":
+    "構造的な思考、素早いプロトタイピング、実践的なデザイン実行力。",
+  "Placeholder copy for strengths. This section can describe your problem-solving process, communication style, research ability, visual judgment, and product sense.":
+    "強みに関する仮文です。問題解決プロセス、コミュニケーション、リサーチ力、ビジュアル判断、プロダクト感覚などを記述できます。",
+  "Turning ambiguous problems into clear design directions and workable interfaces.":
+    "曖昧な課題を明確なデザイン方向性と実装可能なインターフェースへ変換する。",
+  "Placeholder copy for skills. Later, this can include UX research, interaction design, UI design, prototyping, illustration, motion, and collaboration tools.":
+    "スキルに関する仮文です。UXリサーチ、インタラクションデザイン、UIデザイン、プロトタイピング、イラスト、モーション、協働ツールなどを後から追加できます。",
+  "Personal interests that keep my design perspective open and curious.":
+    "デザインの視点を開き、好奇心を保つための個人的な関心。",
+  "Placeholder copy for outside-of-work stories. This section can include hobbies, side projects, visual experiments, communities, or moments that shaped your creative taste.":
+    "仕事以外の活動に関する仮文です。趣味、サイドプロジェクト、ビジュアル実験、コミュニティ、創作感覚に影響した出来事などを追加できます。",
+  "Creating work that balances clarity, warmth, and long-term usefulness.":
+    "明快さ、温かさ、長期的な有用性のバランスを持つものをつくる。",
+  "Placeholder copy for your view on creation. This section can explain what kind of experiences you want to make and what values guide your design decisions.":
+    "制作観に関する仮文です。どのような体験をつくりたいか、どのような価値観がデザイン判断を支えているかを記述できます。",
 };
 
 const translatableSelectors = [

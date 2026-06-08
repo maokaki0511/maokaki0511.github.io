@@ -411,6 +411,23 @@ a {
   line-height: 1.2;
 }
 
+.about-case-page .case-hero {
+  max-width: 720px;
+}
+
+.about-case-page .case-hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.about-case-page .case-hero p {
+  font-size: 20px;
+}
+
+.about-case-overview {
+  margin-bottom: 72px;
+}
+
 .case-tags {
   margin-bottom: 0;
 }
