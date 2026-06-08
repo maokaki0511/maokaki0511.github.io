@@ -32,24 +32,36 @@ if (caseSections.length && caseLinks.length) {
     });
   };
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+  const updateActiveSection = () => {
+    const marker = window.scrollY + 170;
+    const isAtBottom =
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
 
-      if (visible[0]) {
-        setActiveLink(visible[0].target.id);
-      }
-    },
-    {
-      rootMargin: "-30% 0px -55% 0px",
-      threshold: [0.1, 0.25, 0.5, 0.75],
+    if (isAtBottom) {
+      setActiveLink(caseSections[caseSections.length - 1].id);
+      return;
     }
-  );
 
-  caseSections.forEach((section) => observer.observe(section));
-  setActiveLink(caseSections[0].id);
+    const activeSection = [...caseSections]
+      .filter((section) => section.offsetTop <= marker)
+      .at(-1);
+
+    setActiveLink((activeSection || caseSections[0]).id);
+  };
+
+  let ticking = false;
+  const requestActiveSectionUpdate = () => {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(() => {
+      updateActiveSection();
+      ticking = false;
+    });
+  };
+
+  window.addEventListener("scroll", requestActiveSectionUpdate, { passive: true });
+  window.addEventListener("resize", requestActiveSectionUpdate);
+  updateActiveSection();
 }
 
 const normalizeText = (value) => value.replace(/\s+/g, " ").trim();
